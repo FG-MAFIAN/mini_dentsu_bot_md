@@ -1,0 +1,17 @@
+run = "node index.js"
+language = "nodejs"
+entrypoint = "index.js"
+
+[nix]
+  channel = "stable-24_05"
+
+[deployment]
+  run = ["sh", "-c", "node index.js"]
+  deploymentTarget = "cloudrun"
+
+[[ports]]
+  localPort = 8000
+  externalPort = 80
+
+[env]
+  NODE_ENV = "production"

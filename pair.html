@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINI DENTSU MD — Pair Device</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8a2be2;
+      --secondary: #00f7ff;
+      --accent: #ff2a6d;
+      --gold: #FFD700;
+      --dark: #0c1020;
+      --darker: #060810;
+      --glass: rgba(255, 255, 255, 0.05);
+      --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: var(--darker);
+      font-family: 'Rajdhani', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(circle at 15% 25%, rgba(138,43,226,0.2) 0%, transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(0,247,255,0.15) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(255,42,109,0.05) 0%, transparent 60%);
+      z-index: -2;
+      animation: bgPulse 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgPulse {
+      0%  { opacity: 0.7; }
+      100%{ opacity: 1; }
+    }
+
+    .grid {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image:
+        linear-gradient(rgba(0,247,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,247,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: -1;
+    }
+
+    .particles {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      animation: floatUp linear infinite;
+    }
+
+    @keyframes floatUp {
+      0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10%  { opacity: 0.8; }
+      90%  { opacity: 0.8; }
+      100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+      z-index: 1;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .logo-text {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 3px;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      0%  { filter: drop-shadow(0 0 8px rgba(138,43,226,0.8)); }
+      50% { filter: drop-shadow(0 0 16px rgba(0,247,255,0.8)); }
+      100%{ filter: drop-shadow(0 0 8px rgba(255,42,109,0.8)); }
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 2px;
+      margin-top: 6px;
+      text-transform: uppercase;
+    }
+
+    .card {
+      background: rgba(10, 15, 30, 0.85);
+      border: 1px solid rgba(138, 43, 226, 0.3);
+      border-radius: 20px;
+      padding: 32px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow:
+        0 0 40px rgba(138,43,226,0.15),
+        0 0 80px rgba(0,247,255,0.05),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px;
+      right: -2px; bottom: -2px;
+      background: linear-gradient(45deg, var(--primary), transparent, var(--secondary), transparent, var(--accent), transparent);
+      border-radius: 22px;
+      z-index: -1;
+      opacity: 0.4;
+      animation: borderGlow 4s linear infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes borderGlow {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 15px;
+      color: var(--secondary);
+      text-shadow: 0 0 10px rgba(0,247,255,0.7);
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .section-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .input-wrap {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+      font-size: 16px;
+      z-index: 1;
+    }
+
+    .input-wrap input {
+      width: 100%;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid rgba(138,43,226,0.3);
+      border-radius: 12px;
+      padding: 16px 16px 16px 48px;
+      color: white;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      outline: none;
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+    }
+
+    .input-wrap input:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 20px rgba(0,247,255,0.2);
+    }
+
+    .input-wrap input::placeholder {
+      color: rgba(255,255,255,0.3);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, var(--primary) 0%, #6a11cb 50%, var(--primary) 100%);
+      background-size: 200% 200%;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      animation: btnShift 4s linear infinite;
+    }
+
+    @keyframes btnShift {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.6s;
+    }
+
+    .btn:hover::after { left: 100%; }
+
+    .btn:hover {
+      box-shadow: 0 0 30px rgba(138,43,226,0.6);
+      transform: translateY(-2px);
+    }
+
+    .btn:active { transform: translateY(0); }
+
+    #status {
+      min-height: 70px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--secondary);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 13px;
+    }
+
+    .spinner {
+      width: 20px; height: 20px;
+      border: 2px solid rgba(0,247,255,0.2);
+      border-top-color: var(--secondary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .code-box {
+      background: rgba(0,0,0,0.5);
+      border: 1px solid rgba(0,247,255,0.4);
+      border-radius: 14px;
+      padding: 16px 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: pulseBorder 2s ease-in-out infinite;
+      width: 100%;
+      text-align: center;
+    }
+
+    @keyframes pulseBorder {
+      0%, 100% { box-shadow: 0 0 10px rgba(0,247,255,0.3); border-color: rgba(0,247,255,0.4); }
+      50%       { box-shadow: 0 0 25px rgba(0,247,255,0.6); border-color: rgba(0,247,255,0.7); }
+    }
+
+    .code-box:hover {
+      background: rgba(0,247,255,0.08);
+      transform: scale(1.02);
+    }
+
+    .code-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 3px;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .code-value {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--secondary);
+      text-shadow: 0 0 20px rgba(0,247,255,0.8), 0 0 40px rgba(0,247,255,0.4);
+      letter-spacing: 6px;
+    }
+
+    .code-hint {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 8px;
+    }
+
+    .error-box {
+      background: rgba(255,42,109,0.1);
+      border: 1px solid rgba(255,42,109,0.4);
+      border-radius: 12px;
+      padding: 14px 20px;
+      color: var(--accent);
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 20px 0;
+      opacity: 0.4;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--secondary), transparent);
+    }
+
+    .divider span {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--secondary);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .footer-text {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 1px;
+    }
+
+    .footer-text span {
+      color: var(--accent);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="container">
+    <div class="header">
+      <div class="logo-text">MINI DENTSU MD</div>
+      <div class="subtitle">by 𝗗𝗘𝗡𝗧𝗦𝗨'𝗦 𝗧𝗘𝗖𝗛</div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">∞ LINK YOUR DEVICE ∞</div>
+      <div class="section-desc">Enter your number with country code to get your pairing code</div>
+
+      <div class="input-wrap">
+        <i class="fas fa-mobile-alt input-icon"></i>
+        <input type="tel" id="phone" placeholder="+242 XX XXX XXXX" autocomplete="off" />
+      </div>
+
+      <button class="btn" id="pairBtn">
+        <i class="fas fa-link" style="margin-right:8px"></i> GET PAIRING CODE
+      </button>
+
+      <div id="status"></div>
+
+      <div class="divider"><span>DENTSU'S TECH</span></div>
+
+      <div class="footer-text">
+        Powered by <span>𝗗𝗘𝗡𝗧𝗦𝗨'𝗦 𝗧𝗘𝗖𝗛</span> • MINI DENTSU MD
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Particles
+    (function() {
+      const container = document.getElementById('particles');
+      const colors = ['rgba(138,43,226,0.5)', 'rgba(0,247,255,0.5)', 'rgba(255,42,109,0.5)', 'rgba(255,215,0,0.3)'];
+      for (let i = 0; i < 40; i++) {
+        const p = document.createElement('div');
+        p.classList.add('particle');
+        const s = Math.random() * 6 + 2;
+        p.style.cssText = `width:${s}px;height:${s}px;background:${colors[Math.floor(Math.random()*colors.length)]};left:${Math.random()*100}%;animation-duration:${Math.random()*20+12}s;animation-delay:${Math.random()*8}s`;
+        container.appendChild(p);
+      }
+    })();
+
+    const phoneInput = document.getElementById('phone');
+    const pairBtn = document.getElementById('pairBtn');
+    const statusDiv = document.getElementById('status');
+
+    pairBtn.addEventListener('click', async () => {
+      const raw = phoneInput.value.replace(/[^0-9]/g, '');
+      if (!raw) {
+        statusDiv.innerHTML = '<div class="error-box"><i class="fas fa-exclamation-circle"></i> Please enter your WhatsApp number.</div>';
+        return;
+      }
+      if (raw.length < 10) {
+        statusDiv.innerHTML = '<div class="error-box"><i class="fas fa-times-circle"></i> Invalid number format. Include country code.</div>';
+        return;
+      }
+
+      pairBtn.disabled = true;
+      pairBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin" style="margin-right:8px"></i> CONNECTING...';
+      statusDiv.innerHTML = '<div class="loading"><div class="spinner"></div>Requesting pairing code...</div>';
+
+      try {
+        const res = await fetch(`/code?number=${raw}`);
+        const data = await res.json();
+        const code = data.code || 'UNAVAILABLE';
+
+        statusDiv.innerHTML = `
+          <div class="code-box" onclick="copyCode('${code}')">
+            <div class="code-label">YOUR PAIRING CODE</div>
+            <div class="code-value" id="codeVal">${code}</div>
+            <div class="code-hint"><i class="fas fa-copy"></i> Tap to copy</div>
+          </div>`;
+      } catch (e) {
+        statusDiv.innerHTML = '<div class="error-box"><i class="fas fa-exclamation-triangle"></i> Service Unavailable. Please retry.</div>';
+      } finally {
+        pairBtn.disabled = false;
+        pairBtn.innerHTML = '<i class="fas fa-link" style="margin-right:8px"></i> GET PAIRING CODE';
+      }
+    });
+
+    async function copyCode(code) {
+      try {
+        await navigator.clipboard.writeText(code);
+        const el = document.getElementById('codeVal');
+        el.textContent = 'COPIED ✓';
+        el.style.color = '#39FF14';
+        setTimeout(() => { el.textContent = code; el.style.color = ''; }, 2000);
+      } catch(e) {}
+    }
+
+    phoneInput.addEventListener('keydown', e => { if (e.key === 'Enter') pairBtn.click(); });
+  </script>
+</body>
+</html>

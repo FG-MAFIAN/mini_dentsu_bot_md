@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: mini-dentsu-md
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /code/ping
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        generateValue: true
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_OWNER
+        sync: false
+      - key: GITHUB_REPO
+        sync: false
+      - key: OWNER_NUMBER
+        sync: false
+      - key: PREFIX
+        value: "."
+      - key: AUTO_VIEW_STATUS
+        value: "true"
+      - key: AUTO_LIKE_STATUS
+        value: "true"
+      - key: AUTO_RECORDING
+        value: "true"

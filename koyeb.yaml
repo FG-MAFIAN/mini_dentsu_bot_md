@@ -1,0 +1,49 @@
+name: mini-dentsu-md
+type: web
+
+git:
+  repository: github.com/Med12-q/mini_dentsu_bot_mdien
+  branch: main
+
+build:
+  builder: buildpack
+  build_command: npm install
+
+run: node index.js
+
+ports:
+  - port: 8000
+    protocol: http
+
+health_checks:
+  - grace_period: 10
+    interval: 30
+    restart_limit: 3
+    path: /code/ping
+    port: 8000
+    protocol: http
+    timeout: 30
+
+env:
+  - key: NODE_ENV
+    value: production
+  - key: GITHUB_TOKEN
+    secret: true
+  - key: GITHUB_OWNER
+    secret: true
+  - key: GITHUB_REPO
+    secret: true
+  - key: OWNER_NUMBER
+    secret: true
+  - key: PREFIX
+    value: "."
+  - key: AUTO_VIEW_STATUS
+    value: "true"
+  - key: AUTO_LIKE_STATUS
+    value: "true"
+  - key: AUTO_RECORDING
+    value: "true"
+
+scaling:
+  min: 1
+  max: 1

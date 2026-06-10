@@ -1,0 +1,66 @@
+{
+  "name": "MINI-DENTSU-MD",
+  "description": "Multi-Number WhatsApp Bot by DENTSU'S TECH",
+  "repository": "https://github.com/Med12-q/mini_dentsu_bot_mdien",
+  "logo": "https://files.catbox.moe/kmg8s4.jpg",
+  "keywords": ["whatsapp", "bot", "baileys", "multi-device", "dentsu"],
+  "website": "https://github.com/Med12-q/mini_dentsu_bot_mdien",
+  "success_url": "/code/ping",
+  "env": {
+    "GITHUB_TOKEN": {
+      "description": "GitHub Personal Access Token for session storage",
+      "required": true
+    },
+    "GITHUB_OWNER": {
+      "description": "Your GitHub username (owner of the session repo)",
+      "required": true
+    },
+    "GITHUB_REPO": {
+      "description": "GitHub repo name used for session storage",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number with country code (e.g. 2420000000000)",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "value": ".",
+      "required": false
+    },
+    "AUTO_VIEW_STATUS": {
+      "description": "Auto-view WhatsApp statuses (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "AUTO_LIKE_STATUS": {
+      "description": "Auto-like WhatsApp statuses (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "AUTO_RECORDING": {
+      "description": "Show recording presence (true/false)",
+      "value": "true",
+      "required": false
+    },
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'MINI DENTSU MD deployed successfully by DENTSU S TECH'"
+  }
+}
