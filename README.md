@@ -1,24 +1,24 @@
 <div align="center">
 
-<img src="https://files.catbox.moe/kmg8s4.jpg" alt="MINI DENTSU MD" width="400" style="border-radius:20px"/>
+<img src="https://files.catbox.moe/kmg8s4.jpg" alt="MINI MAFIAN MD" width="400" style="border-radius:20px"/>
 
 <br/>
 
-<a href="https://github.com/Med12-q/mini_dentsu_bot_mdien">
+<a href="https://github.com/Med12-q/mini_mafian_bot_mdien">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=42&duration=3000&pause=800&color=FF00FF&center=true&vCenter=true&multiline=true&width=800&height=110&lines=✦+MINI+DENTSU+MD+✦;🤖+WhatsApp+Multi-Bot" alt="Typing SVG" />
 </a>
 
 <br/>
 
 <p align="center">
-  <a href="https://github.com/Med12-q/mini_dentsu_bot_mdien/stargazers">
-    <img src="https://img.shields.io/github/stars/Med12-q/mini_dentsu_bot_mdien?style=for-the-badge&logo=starship&color=FF00FF&labelColor=0D0D0D&logoColor=FF00FF" />
+  <a href="https://github.com/Med12-q/mini_mafian_bot_mdien/stargazers">
+    <img src="https://img.shields.io/github/stars/Med12-q/mini_mafian_bot_mdien?style=for-the-badge&logo=starship&color=FF00FF&labelColor=0D0D0D&logoColor=FF00FF" />
   </a>
-  <a href="https://github.com/Med12-q/mini_dentsu_bot_mdien/network/members">
-    <img src="https://img.shields.io/github/forks/Med12-q/mini_dentsu_bot_mdien?style=for-the-badge&logo=git&color=00FFFF&labelColor=0D0D0D&logoColor=00FFFF" />
+  <a href="https://github.com/Med12-q/mini_mafian_bot_mdien/network/members">
+    <img src="https://img.shields.io/github/forks/Med12-q/mini_mafian_bot_mdien?style=for-the-badge&logo=git&color=00FFFF&labelColor=0D0D0D&logoColor=00FFFF" />
   </a>
-  <a href="https://github.com/Med12-q/mini_dentsu_bot_mdien/issues">
-    <img src="https://img.shields.io/github/issues/Med12-q/mini_dentsu_bot_mdien?style=for-the-badge&logo=github&color=FF6B6B&labelColor=0D0D0D&logoColor=FF6B6B" />
+  <a href="https://github.com/Med12-q/mini_mafian_bot_mdien/issues">
+    <img src="https://img.shields.io/github/issues/Med12-q/mini_mafian_bot_mdien?style=for-the-badge&logo=github&color=FF6B6B&labelColor=0D0D0D&logoColor=FF6B6B" />
   </a>
   <img src="https://img.shields.io/badge/License-MIT-39FF14?style=for-the-badge&labelColor=0D0D0D" />
   <img src="https://img.shields.io/badge/Node.js-≥18.x-00FF88?style=for-the-badge&logo=node.js&labelColor=0D0D0D&logoColor=00FF88" />
@@ -35,7 +35,7 @@
 ║   ██║  ██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║██║   ██║           ║
 ║   ██████╔╝███████╗██║ ╚████║   ██║   ███████║╚██████╔╝           ║
 ║   ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝ ╚═════╝            ║
-║                  𝗠𝗜𝗡𝗜 𝗗𝗘𝗡𝗧𝗦𝗨 𝗠𝗗 — 𝗕𝗬 𝗗𝗘𝗡𝗧𝗦𝗨'𝗦 𝗧𝗘𝗖𝗛              ║
+║                  𝗠𝗜𝗡𝗜 𝗗𝗘𝗡𝗧𝗦𝗨 𝗠𝗗 — 𝗕𝗬 MAFIAN'𝗦 𝗧𝗘𝗖𝗛              ║
 ╚═══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -49,9 +49,9 @@
 
 ---
 
-## 🌟 About MINI DENTSU MD
+## 🌟 About MINI MAFIAN MD
 
-> **MINI DENTSU MD** is a next-generation **multi-number WhatsApp bot** built on [Baileys](https://github.com/WhiskeySockets/Baileys) — the most powerful WhatsApp Web API available. Engineered by **𝗗𝗘𝗡𝗧𝗦𝗨'𝗦 𝗧𝗘𝗖𝗛**, it handles multiple WhatsApp sessions simultaneously, stores credentials securely on GitHub, and reconnects automatically after any disconnection.
+> **MINI MAFIAN MD** is a next-generation **multi-number WhatsApp bot** built on [Baileys](https://github.com/WhiskeySockets/Baileys) — the most powerful WhatsApp Web API available. Engineered by **MAFIAN'𝗦 𝗧𝗘𝗖𝗛**, it handles multiple WhatsApp sessions simultaneously, stores credentials securely on GitHub, and reconnects automatically after any disconnection.
 
 <div align="center">
 
@@ -79,31 +79,31 @@
 
 **🚂 Railway.app**
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Med12-q/mini_dentsu_bot_mdien)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Med12-q/mini_mafian_bot_mdien)
 
 <br/>
 
 **🎨 Render.com**
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Med12-q/mini_dentsu_bot_mdien)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Med12-q/mini_mafian_bot_mdien)
 
 <br/>
 
 **💜 Heroku**
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Med12-q/mini_dentsu_bot_mdien)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Med12-q/mini_mafian_bot_mdien)
 
 <br/>
 
 **🟣 Koyeb**
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Med12-q/mini_dentsu_bot_mdien&branch=main&name=mini-dentsu-md)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Med12-q/mini_dentsu_bot_mdien&branch=main&name=mini-mafian-md)
 
 <br/>
 
 **🟠 Replit**
 
-[![Run on Replit](https://replit.com/badge/github/Med12-q/mini_dentsu_bot_mdien)](https://replit.com/github/Med12-q/mini_dentsu_bot_mdien)
+[![Run on Replit](https://replit.com/badge/github/Med12-q/mini_mafian_bot_mdien)](https://replit.com/github/Med12-q/mini_mafian_bot_mdien)
 
 </div>
 
@@ -125,7 +125,7 @@
 ```bash
 # Clone the repository
 git clone https://github.com/Med12-q/mini_dentsu_bot_mdien.git
-cd mini_dentsu_bot_mdien
+cd mini_mafian_bot_mdien
 
 # Install all dependencies
 npm install
@@ -141,8 +141,8 @@ nano .env
 
 ```env
 # ╔══════════════════════════════════════════╗
-# ║     MINI DENTSU MD — Environment Config  ║
-# ║     By DENTSU'S TECH                     ║
+# ║     MINI MAFIAN MD — Environment Config  ║
+# ║     By MAFIAN'S TECH                     ║
 # ╚══════════════════════════════════════════╝
 
 PORT=8000
@@ -153,9 +153,9 @@ GITHUB_OWNER=your_github_username
 GITHUB_REPO=your_session_storage_repo
 
 # Bot Identity
-OWNER_NUMBER=2420000000000
+OWNER_NUMBER=2348122403265
 PREFIX=.
-BOT_NAME=MINI DENTSU MD
+BOT_NAME=MINI MAFIAN MD
 
 # Automation Features
 AUTO_VIEW_STATUS=true
@@ -273,9 +273,9 @@ mini_dentsu_bot_mdien/
 2. Connect your GitHub account
 3. Set environment variables in the Railway dashboard:
    - `GITHUB_TOKEN` → Your GitHub PAT
-   - `GITHUB_OWNER` → Your GitHub username
+   - `GITHUB_OWNER` → FG MAFIAN 
    - `GITHUB_REPO` → Session storage repo name
-   - `OWNER_NUMBER` → Your WhatsApp number
+   - `OWNER_NUMBER` →  2348122403265
 4. Deploy and visit your Railway URL + `/pair`
 
 </details>
@@ -298,8 +298,8 @@ mini_dentsu_bot_mdien/
 ```bash
 # Install Heroku CLI, then:
 heroku login
-heroku create mini-dentsu-md
-heroku config:set GITHUB_TOKEN=xxx GITHUB_OWNER=xxx GITHUB_REPO=xxx OWNER_NUMBER=xxx
+heroku create mini-mafian-md
+heroku config:set GITHUB_TOKEN=8548519065:AAG7INdGbo6xVEsrTH7ia3xJc9I6nT-P0CE GITHUB_OWNER=FG MAFIAN GITHUB_REPO=xxx OWNER_NUMBER=2348122403265
 git push heroku main
 heroku open
 ```
@@ -333,8 +333,8 @@ heroku open
 
 ```bash
 # SSH into your server, then:
-git clone https://github.com/Med12-q/mini_dentsu_bot_mdien.git
-cd mini_dentsu_bot_mdien
+git clone https://github.com/Med12-q/mini_mafian_bot_mdien.git
+cd mini_mafian_bot_mdien
 npm install
 cp .env.example .env && nano .env
 # Fill in your variables, then:
@@ -360,7 +360,7 @@ pm2 save
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║    𝗗𝗘𝗡𝗧𝗦𝗨'𝗦 𝗧𝗘𝗖𝗛                                           ║
+║    MAFIAN'𝗦 𝗧𝗘𝗖𝗛                                           ║
 ║                                                              ║
 ║    🔥 Professional WhatsApp Bot Developer                    ║
 ║    💎 Multi-Platform Deployment Expert                       ║
@@ -374,7 +374,7 @@ pm2 save
   <img src="https://img.shields.io/badge/GitHub-DENTSU'S%20TECH-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0D0D" />
 </a>
 &nbsp;
-<a href="https://whatsapp.com/channel/0029VbC1s7fFnSz1YhZYc01h">
+<a href="https://whatsapp.com/channel/0029Vb81UUy6xCSUQ0QZXb0Z">
   <img src="https://img.shields.io/badge/WhatsApp-Follow%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0D0D0D" />
 </a>
 
@@ -388,6 +388,6 @@ pm2 save
 
 <br/>
 
-> *Made with 💜 by **𝗗𝗘𝗡𝗧𝗦𝗨'𝗦 𝗧𝗘𝗖𝗛** — All rights reserved*
+> *Made with 💜 by **MAFIAN'𝗦 𝗧𝗘𝗖𝗛** — All rights reserved*
 
 </div>
